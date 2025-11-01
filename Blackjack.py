@@ -1,6 +1,7 @@
 import random
 class CARD:
-    def __init__(self,suit,rank):
+    #This is for the player who is playing
+    def __init__(self,suit,rank): 
         self.suit=suit
         self.rank=rank
     def __str__(self):
@@ -35,8 +36,7 @@ class HAND:
         self.value=0
         has_ace=False
         for card in self.cards:
-            card_value=int(card
-                           .rank["value"])
+            card_value=int(card.rank["value"])
             self.value+=card_value
             if card.rank["rank"]=="A":
                 has_ace=True
