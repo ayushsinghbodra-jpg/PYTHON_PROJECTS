@@ -57,7 +57,7 @@ class HAND:
         if not self.dealer:
             print("Value",self.get_value())
         print()   
-
+        
 class GAME:
     def play(self):
         game_number=0
