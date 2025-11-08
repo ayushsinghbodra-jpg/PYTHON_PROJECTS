@@ -5,8 +5,7 @@ class CARD:
         self.suit=suit
         self.rank=rank
     def __str__(self):
-        return f"{self.rank['rank']} of {self.suit}"
-    
+        return f"{self.rank['rank']} of {self.suit}"    
 class DECK:
     def __init__(self):
         self.cards =[]
@@ -57,7 +56,7 @@ class HAND:
         if not self.dealer:
             print("Value",self.get_value())
         print()   
-        
+
 class GAME:
     def play(self):
         game_number=0
